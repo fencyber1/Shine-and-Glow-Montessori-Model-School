@@ -9,7 +9,7 @@ export const Route = createFileRoute("/about")({
     seoPage({
       title: "About Shine and Glow Montessori Model School in Tema, Ghana",
       description:
-        "Meet the mission and values behind Shine and Glow Montessori Model School — a preschool (6 months to 6 years) at Community 25, Tema, Ghana where children grow in the values of life and the fear of God.",
+        "Meet the mission and values behind Shine and Glow Montessori Model School — a school (6 months to 10 years) at Community 25, Tema, Ghana where children grow in the values of life and the fear of God.",
       path: "/about",
     }),
   component: About,

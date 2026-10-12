@@ -96,7 +96,7 @@ export const faqSchema = {
       name: "What ages does Shine and Glow Montessori Model School accept?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "We welcome children from 6 months to 6 years — Infant, Nursery and Preschool — call 024 656 3922 and we will help with class placement.",
+        text: "We welcome children from 6 months to 10 years — Infant, Nursery, Preschool and Primary — call 024 656 3922 and we will help with class placement.",
       },
     },
     {

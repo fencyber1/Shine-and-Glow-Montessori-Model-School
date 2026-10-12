@@ -79,11 +79,11 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Shine and Glow Montessori Model School — Ages 6 Months to 6 Years in Tema" },
+      { title: "Shine and Glow Montessori Model School — Ages 6 Months to 10 Years in Tema" },
       {
         name: "description",
         content:
-          "Shine and Glow Montessori Model School, Community 25, Tema — Infant, Nursery and Preschool. Montessori learning for children aged 6 months to 6 years.",
+          "Shine and Glow Montessori Model School, Community 25, Tema — Infant, Nursery, Preschool and Primary. Montessori learning for children aged 6 months to 10 years.",
       },
       { name: "author", content: "Shine and Glow Montessori Model School" },
       { property: "og:type", content: "website" },

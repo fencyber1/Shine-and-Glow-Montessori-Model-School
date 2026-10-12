@@ -147,6 +147,7 @@ export function ContactForm({ compact = false }: { compact?: boolean }) {
           <option>Infant</option>
           <option>Nursery</option>
           <option>Preschool</option>
+          <option>Primary</option>
           <option>Not sure yet</option>
         </select>
       </label>
@@ -190,7 +191,7 @@ const answers = [
   ["Can I tour the campus?", "Yes. Use Contact Admissions to request a weekday visit."],
   [
     "What ages do you serve?",
-    "We welcome children from 6 months to 6 years — Infant, Nursery and Preschool — call 024 656 3922 and we will help with class placement.",
+    "We welcome children from 6 months to 10 years — Infant, Nursery, Preschool and Primary — call 024 656 3922 and we will help with class placement.",
   ],
 ] as const;
 

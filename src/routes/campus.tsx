@@ -9,7 +9,7 @@ export const Route = createFileRoute("/campus")({
     seoPage({
       title: "Campus & Facilities — Shine and Glow Montessori Model School, Tema",
       description:
-        "Tour Shine and Glow Montessori Model School's classrooms, play areas and outdoor spaces — 24-hour CCTV, well-stocked library, and homely, well-ventilated rooms for ages 6 months to 6 years at Community 25, Tema.",
+        "Tour Shine and Glow Montessori Model School's classrooms, play areas and outdoor spaces — 24-hour CCTV, well-stocked library, and homely, well-ventilated rooms for ages 6 months to 10 years at Community 25, Tema.",
       path: "/campus",
     }),
   component: Campus,

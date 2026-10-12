@@ -17,7 +17,7 @@ function Team() {
       <PageHero
         eyebrow="Meet the team"
         title="Trust begins with the people who show up every day."
-        intro="Shine and Glow is led by co-founder Rev. Mrs Charity Addae, supported by caring trained teachers for ages 6 months to 6 years."
+        intro="Shine and Glow is led by co-founder Rev. Mrs Charity Addae, supported by caring trained teachers for ages 6 months to 10 years."
       />
       <Section eyebrow="Leadership" title="Led with experience.">
         <div className="grid gap-5 md:grid-cols-3">
@@ -37,7 +37,7 @@ function Team() {
               <p className="mt-3 text-sm leading-relaxed text-ink-soft">
                 Our head leads Shine and Glow with a passion for Montessori education and the Ghana
                 curriculum — guiding children from their first day as infants to graduation day in
-                Preschool.
+                Primary.
               </p>
             </div>
           </article>

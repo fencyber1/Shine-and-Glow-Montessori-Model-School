@@ -8,9 +8,9 @@ import { seoPage } from "@/lib/seo";
 export const Route = createFileRoute("/programs")({
   head: () =>
     seoPage({
-      title: "Programs & Curriculum — Ages 6 Months to 6 Years | Shine and Glow",
+      title: "Programs & Curriculum — Ages 6 Months to 10 Years | Shine and Glow",
       description:
-        "Explore Shine and Glow Montessori Model School's Infant, Nursery and Preschool programs at Community 25, Tema, Ghana — Montessori learning for children aged 6 months to 6 years.",
+        "Explore Shine and Glow Montessori Model School's Infant, Nursery, Preschool and Primary programs at Community 25, Tema, Ghana — Montessori learning for children aged 6 months to 10 years.",
       path: "/programs",
     }),
   component: Programs,
@@ -39,12 +39,22 @@ const stages = [
   ],
   [
     "Preschool",
-    "Ready for primary school · up to 6 years",
+    "Ready for primary school",
     [
       "Reading and writing readiness",
       "Early mathematics",
       "Nature and the world around us",
       "Confidence, focus, and school habits",
+    ],
+  ],
+  [
+    "Primary",
+    "Strong foundations · up to 10 years",
+    [
+      "English and Mathematics foundations",
+      "Science and ICT discovery",
+      "Reading fluency and good study habits",
+      "Leadership, service and good character",
     ],
   ],
 ];
@@ -55,15 +65,16 @@ function Programs() {
       <PageHero
         eyebrow="Programs & curriculum"
         title="Learning that grows with your child."
-        intro="Shine and Glow Montessori Model School gives children aged 6 months to 6 years a bright start — hands-on Montessori learning, strong foundations in language and number, and the values of life and the fear of God."
+        intro="Shine and Glow Montessori Model School gives children aged 6 months to 10 years a bright start — hands-on Montessori learning, strong foundations in language and number, and the values of life and the fear of God."
       />
-      <Section eyebrow="Learning pathways" title="A gentle journey from 6 months to 6 years.">
+      <Section eyebrow="Learning pathways" title="A gentle journey from 6 months to 10 years.">
         <StageTabs
           tabs={
             [
               { value: "infant", label: "Infant" },
               { value: "nursery", label: "Nursery" },
               { value: "preschool", label: "Preschool" },
+              { value: "primary", label: "Primary" },
             ] satisfies Array<StageTab>
           }
         >
@@ -71,6 +82,7 @@ function Programs() {
             { value: "infant", indexes: [0] },
             { value: "nursery", indexes: [1] },
             { value: "preschool", indexes: [2] },
+            { value: "primary", indexes: [3] },
           ].map((group) => (
             <TabsContent key={group.value} value={group.value} className="mt-8">
               <div className="grid gap-5 md:grid-cols-2">

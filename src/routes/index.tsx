@@ -10,9 +10,9 @@ import { JsonLd, seoPage, schoolSchema } from "@/lib/seo";
 export const Route = createFileRoute("/")({
   head: () =>
     seoPage({
-      title: "Shine and Glow Montessori Model School, Tema | Ages 6 Months to 6 Years",
+      title: "Shine and Glow Montessori Model School, Tema | Ages 6 Months to 10 Years",
       description:
-        "Shine and Glow Montessori Model School, Community 25, Tema — Infant, Nursery and Preschool. Montessori learning for children aged 6 months to 6 years.",
+        "Shine and Glow Montessori Model School, Community 25, Tema — Infant, Nursery, Preschool and Primary. Montessori learning for children aged 6 months to 10 years.",
       path: "/",
     }),
   component: Index,
@@ -141,7 +141,7 @@ function Index() {
           <div className="space-y-4 leading-relaxed text-ink-soft">
             <p>
               Choosing a school in Ghana is one of the most important decisions a family makes. The
-              years from 6 months to 6 years shape how a child learns, relates to others, and sees
+              years from 6 months to 10 years shape how a child learns, relates to others, and sees
               themselves. At Shine and Glow Montessori Model School, we walk that whole journey with
               your child.
             </p>
@@ -175,8 +175,8 @@ function Index() {
           </div>
         </div>
       </Section>
-      <Section eyebrow="Academic programs" title="Three stages, one promise: children who thrive.">
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+      <Section eyebrow="Academic programs" title="Four stages, one promise: children who thrive.">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
           {[
             [
               "Infant",
@@ -192,6 +192,11 @@ function Index() {
               "Preschool",
               "Ready for primary school",
               "Reading and writing readiness, early mathematics, and sound moral training.",
+            ],
+            [
+              "Primary",
+              "Strong foundations",
+              "English, Mathematics, Science and ICT with sound moral training.",
             ],
           ].map(([name, ages, text]) => (
             <article

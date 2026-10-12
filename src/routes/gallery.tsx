@@ -10,7 +10,7 @@ export const Route = createFileRoute("/gallery")({
     seoPage({
       title: "Photo Gallery | Shine and Glow Montessori Model School",
       description:
-        "See life at Shine and Glow Montessori Model School at Community 25, Tema, Ghana — classrooms, outdoor play, reading, and school events for ages 6 months to 6 years.",
+        "See life at Shine and Glow Montessori Model School at Community 25, Tema, Ghana — classrooms, outdoor play, reading, and school events for ages 6 months to 10 years.",
       path: "/gallery",
     }),
   component: Gallery,
