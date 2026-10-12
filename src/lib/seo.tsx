@@ -1,4 +1,4 @@
-export const SITE_URL = "https://sims-international.vercel.app";
+export const SITE_URL = "https://shine-and-glow-montessori-model-sch.vercel.app";
 export const SITE_NAME = "Shine and Glow Montessori Model School";
 export const OG_IMAGE = `${SITE_URL}/og-image.jpeg`;
 export const OG_IMAGE_WIDTH = 1280;

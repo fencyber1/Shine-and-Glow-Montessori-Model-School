@@ -89,7 +89,10 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       { property: "og:type", content: "website" },
       { property: "og:site_name", content: "Shine and Glow Montessori Model School" },
       { property: "og:locale", content: "en_GH" },
-      { property: "og:image", content: "https://sims-international.vercel.app/og-image.jpeg" },
+      {
+        property: "og:image",
+        content: "https://shine-and-glow-montessori-model-sch.vercel.app/og-image.jpeg",
+      },
       { property: "og:image:width", content: "1280" },
       { property: "og:image:height", content: "672" },
       { property: "og:image:type", content: "image/jpeg" },

@@ -13,4 +13,4 @@ Allow: /
 User-agent: *
 Allow: /
 
-Sitemap: https://sims-international.vercel.app/sitemap.xml
+Sitemap: https://shine-and-glow-montessori-model-sch.vercel.app/sitemap.xml
