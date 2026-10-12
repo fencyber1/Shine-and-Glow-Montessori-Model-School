@@ -6,9 +6,9 @@ import { JsonLd, faqSchema, seoPage } from "@/lib/seo";
 export const Route = createFileRoute("/contact")({
   head: () =>
     seoPage({
-      title: "Contact Admissions — SIMS International School, Accra",
+      title: "Contact Admissions — Shine and Glow Montessori Model School, Tema",
       description:
-        "Contact SIMS International School at Ablekuma New Town, Accra, Ghana — call 053 179 9325, WhatsApp, email, or send an enquiry.",
+        "Contact Shine and Glow Montessori Model School at Community 25, Tema, Ghana — call 024 656 3922, WhatsApp, email, or send an enquiry.",
       path: "/contact",
     }),
   component: Contact,
@@ -20,23 +20,23 @@ function Contact() {
       <PageHero
         eyebrow="Contact admissions"
         title="Let’s talk about what your child needs next."
-        intro="Choose the way that feels easiest — call 053 179 9325, WhatsApp us, or visit us at Ablekuma New Town, Accra."
+        intro="Choose the way that feels easiest — call 024 656 3922, WhatsApp us, or visit us at Community 25, Tema."
       />
       <Section eyebrow="Get in touch" title="A helpful answer is one step away.">
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-4">
           {[
-            [Phone, "Call", "053 179 9325", "tel:+233531799325"],
+            [Phone, "Call", "024 656 3922 · 024 410 9060", "tel:+233246563922"],
             [
               Mail,
               "Email",
-              "info@simsinternational.edu.gh",
-              "mailto:info@simsinternational.edu.gh",
+              "info@shineandglowmontessori.site",
+              "mailto:info@shineandglowmontessori.site",
             ],
             [
               MessageCircle,
               "WhatsApp",
-              "Chat on WhatsApp — 053 179 9325",
-              "https://wa.me/233531799325",
+              "Chat on WhatsApp — 024 656 3922",
+              "https://wa.me/233246563922",
             ],
             [Clock, "Hours", "Mon–Fri · 6:00am–5:00pm · Sat–Sun Closed", "#hours"],
           ].map(([Icon, title, text, href]) => {
@@ -66,23 +66,29 @@ function Contact() {
             <div className="mt-7 grid gap-3 sm:grid-cols-2">
               <div className="rounded-lg border border-paper/15 bg-paper/10 p-5">
                 <MapPin className="size-5 text-action" />
-                <p className="mt-3 font-bold">SIMS International School</p>
+                <p className="mt-3 font-bold">Shine and Glow Montessori Model School</p>
                 <p className="mt-1 text-sm text-paper/60">
-                  Abase Road, Ablekuma New Town, Accra, Ghana
+                  HFC Estate, Community 25 (INST/C25/H/2 Nana Otu Road), Tema, Greater Accra Region,
+                  Ghana
                 </p>
-                <p className="mt-1 text-sm text-paper/60">Plus code: JMMM+GH Ablekuma New Town</p>
                 <p className="mt-1 text-sm text-paper/60">
                   Mon–Fri · 6:00am–5:00pm · Sat–Sun Closed
                 </p>
                 <a
-                  href="tel:+233531799325"
+                  href="tel:+233246563922"
                   className="mt-2 block text-sm font-bold text-paper hover:text-action"
                 >
-                  053 179 9325
+                  024 656 3922
+                </a>
+                <a
+                  href="tel:+233244109060"
+                  className="mt-1 block text-sm font-bold text-paper hover:text-action"
+                >
+                  024 410 9060
                 </a>
                 <Button asChild variant="link" className="mt-2 px-0 text-paper">
                   <a
-                    href="https://www.google.com/maps/search/?api=1&query=Abase+Road+Ablekuma+New+Town+Accra"
+                    href="https://www.google.com/maps/search/?api=1&query=Shine+and+Glow+Montessori+Model+School+Tema"
                     target="_blank"
                     rel="noreferrer"
                   >
@@ -96,10 +102,16 @@ function Contact() {
                 <p className="mt-1 text-sm text-paper/60">Monday – Friday: 6:00am – 5:00pm</p>
                 <p className="mt-1 text-sm text-paper/60">Saturday – Sunday: Closed</p>
                 <a
-                  href="tel:+233531799325"
+                  href="tel:+233246563922"
                   className="mt-2 block text-sm font-bold text-paper hover:text-action"
                 >
-                  053 179 9325
+                  024 656 3922
+                </a>
+                <a
+                  href="tel:+233244109060"
+                  className="mt-1 block text-sm font-bold text-paper hover:text-action"
+                >
+                  024 410 9060
                 </a>
                 <Button asChild variant="link" className="mt-2 px-0 text-paper">
                   <Link to="/admissions">View admissions steps</Link>

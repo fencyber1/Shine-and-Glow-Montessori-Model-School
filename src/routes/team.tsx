@@ -4,9 +4,9 @@ import { seoPage } from "@/lib/seo";
 export const Route = createFileRoute("/team")({
   head: () =>
     seoPage({
-      title: "Meet the Team — SIMS International School, Accra",
+      title: "Meet the Team — Shine and Glow Montessori Model School, Tema",
       description:
-        "Meet SIMS International School's leadership and teaching team — dedicated Ghana curriculum educators at Ablekuma New Town, Accra, Ghana.",
+        "Meet Shine and Glow Montessori Model School's leadership and teaching team — dedicated Montessori educators at Community 25, Tema, Ghana.",
       path: "/team",
     }),
   component: Team,
@@ -17,7 +17,7 @@ function Team() {
       <PageHero
         eyebrow="Meet the team"
         title="Trust begins with the people who show up every day."
-        intro="SIMS is led by an experienced educator, supported by caring trained teachers from Creche to JHS."
+        intro="Shine and Glow is led by co-founder Rev. Mrs Charity Addae, supported by caring trained teachers for ages 6 months to 6 years."
       />
       <Section eyebrow="Leadership" title="Led with experience.">
         <div className="grid gap-5 md:grid-cols-3">
@@ -25,7 +25,7 @@ function Team() {
             <div
               className="grid aspect-[4/5] w-full place-items-center bg-ink text-5xl font-black text-paper"
               role="img"
-              aria-label="Head of School, SIMS — photo coming soon"
+              aria-label="Head of School, Shine and Glow — photo coming soon"
             >
               S
             </div>
@@ -35,9 +35,9 @@ function Team() {
                 Principal
               </p>
               <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-                Our head leads SIMS with a passion for international education and the Ghana
-                curriculum — guiding children from their first day in Creche to graduation day in
-                JHS.
+                Our head leads Shine and Glow with a passion for Montessori education and the Ghana
+                curriculum — guiding children from their first day as infants to graduation day in
+                Preschool.
               </p>
             </div>
           </article>
@@ -45,18 +45,19 @@ function Team() {
             <div
               className="grid aspect-[4/5] w-full place-items-center bg-ink text-5xl font-black text-paper"
               role="img"
-              aria-label="Proprietor, SIMS — photo coming soon"
+              aria-label="Rev. Mrs Charity Addae, Co-Founder of Shine and Glow — photo coming soon"
             >
-              S
+              C
             </div>
             <div className="p-5">
-              <h2 className="text-xl font-black">Proprietor</h2>
+              <h2 className="text-xl font-black">Rev. Mrs Charity Addae</h2>
               <p className="mt-1 text-xs font-bold uppercase tracking-[0.16em] text-action">
-                Founder
+                Co-Founder
               </p>
               <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-                The proprietor founded SIMS in 1960 with a simple vision — a school where every
-                child is known, loved, and challenged to shine.
+                Rev. Mrs Charity Addae co-founded Shine and Glow with a simple vision — a school
+                where every child is known, loved, and guided to shine, growing in the values of
+                life and the fear of God.
               </p>
             </div>
           </article>
@@ -64,18 +65,18 @@ function Team() {
             <div
               className="grid aspect-[4/5] w-full place-items-center bg-ink text-5xl font-black text-paper"
               role="img"
-              aria-label="SIMS teaching team — photo coming soon"
+              aria-label="Shine and Glow teaching team — photo coming soon"
             >
               S
             </div>
             <div className="p-5">
               <h2 className="text-xl font-black">Teaching Team</h2>
               <p className="mt-1 text-xs font-bold uppercase tracking-[0.16em] text-action">
-                Subject educators
+                Early-years educators
               </p>
               <p className="mt-3 text-sm leading-relaxed text-ink-soft">
-                Caring teachers in every class — from early-years educators to BECE coaches in JHS —
-                who notice the whole child.
+                Caring teachers in every class — from infant caregivers to preschool guides — who
+                notice the whole child.
               </p>
             </div>
           </article>

@@ -8,9 +8,9 @@ import { seoPage } from "@/lib/seo";
 export const Route = createFileRoute("/programs")({
   head: () =>
     seoPage({
-      title: "Programs & Curriculum — Creche to JHS | SIMS International School",
+      title: "Programs & Curriculum — Ages 6 Months to 6 Years | Shine and Glow",
       description:
-        "Explore SIMS International School's Ghana curriculum with the international approach — Creche, Nursery, Kindergarten, Primary and JHS at Ablekuma New Town, Accra, Ghana.",
+        "Explore Shine and Glow Montessori Model School's Infant, Nursery and Preschool programs at Community 25, Tema, Ghana — Montessori learning for children aged 6 months to 6 years.",
       path: "/programs",
     }),
   component: Programs,
@@ -18,8 +18,8 @@ export const Route = createFileRoute("/programs")({
 
 const stages = [
   [
-    "Creche",
-    "Gentle first steps · 18 months – 2 years",
+    "Infant",
+    "Gentle beginnings · from 6 months",
     [
       "Warm, attentive care",
       "Sensory play and discovery",
@@ -29,7 +29,7 @@ const stages = [
   ],
   [
     "Nursery",
-    "Confident little explorers · Ages 3 – 4",
+    "Confident little explorers",
     [
       "Phonics and early language",
       "Numbers through play",
@@ -38,43 +38,13 @@ const stages = [
     ],
   ],
   [
-    "Kindergarten",
-    "Ready for primary school · Ages 4 – 5",
+    "Preschool",
+    "Ready for primary school · up to 6 years",
     [
       "Reading and writing readiness",
       "Early mathematics",
       "Nature and the world around us",
       "Confidence, focus, and school habits",
-    ],
-  ],
-  [
-    "Lower Primary",
-    "Strong foundations · Primary 1 – 3",
-    [
-      "English and Mathematics foundations",
-      "Science and ICT discovery",
-      "French and creative arts",
-      "Reading fluency and good study habits",
-    ],
-  ],
-  [
-    "Upper Primary",
-    "Growing independence · Primary 4 – 6",
-    [
-      "Sound literacy and numeracy",
-      "Science, ICT and French",
-      "History, creative arts and RME",
-      "Leadership, service and good character",
-    ],
-  ],
-  [
-    "JHS",
-    "Ready for secondary school · JHS 1 – 3",
-    [
-      "Full BECE subject coverage",
-      "English, Maths, Science and ICT mastery",
-      "French, RME and career technology",
-      "Guidance, counselling and BECE preparation",
     ],
   ],
 ];
@@ -85,22 +55,22 @@ function Programs() {
       <PageHero
         eyebrow="Programs & curriculum"
         title="Learning that grows with your child."
-        intro="SIMS International School teaches the Ghana curriculum enriched with the international approach — hands-on, self-directed learning in the early years, growing into strong academics and BECE success from Creche to JHS."
+        intro="Shine and Glow Montessori Model School gives children aged 6 months to 6 years a bright start — hands-on Montessori learning, strong foundations in language and number, and the values of life and the fear of God."
       />
-      <Section eyebrow="Learning pathways" title="A gentle journey from first steps to graduation.">
+      <Section eyebrow="Learning pathways" title="A gentle journey from 6 months to 6 years.">
         <StageTabs
           tabs={
             [
-              { value: "early-years", label: "Early Years" },
-              { value: "primary", label: "Primary" },
-              { value: "jhs", label: "JHS" },
+              { value: "infant", label: "Infant" },
+              { value: "nursery", label: "Nursery" },
+              { value: "preschool", label: "Preschool" },
             ] satisfies Array<StageTab>
           }
         >
           {[
-            { value: "early-years", indexes: [0, 1, 2] },
-            { value: "primary", indexes: [3, 4] },
-            { value: "jhs", indexes: [5] },
+            { value: "infant", indexes: [0] },
+            { value: "nursery", indexes: [1] },
+            { value: "preschool", indexes: [2] },
           ].map((group) => (
             <TabsContent key={group.value} value={group.value} className="mt-8">
               <div className="grid gap-5 md:grid-cols-2">
@@ -128,15 +98,14 @@ function Programs() {
           ))}
         </StageTabs>
       </Section>
-      <Section eyebrow="Our curriculum" title="Ghana curriculum, global outlook.">
+      <Section eyebrow="Our curriculum" title="Montessori foundations, Ghanaian heart.">
         <p className="max-w-3xl leading-relaxed text-ink-soft">
-          In Creche, Nursery and Kindergarten, children learn through practical life, sensorial
-          work, language and mathematics — every step through play and discovery. From Primary
-          upward, the Ghana standards-based curriculum takes centre stage, taught with the same
-          hands-on spirit.
+          In Infant, Nursery and Preschool, children learn through practical life, sensorial work,
+          language and mathematics — every step through play and discovery, wrapped in the values of
+          life and the fear of God.
         </p>
         <h3 className="mt-8 text-sm font-black uppercase tracking-[0.18em] text-action">
-          Early years focus
+          What children learn
         </h3>
         <div className="mt-4 grid gap-4 md:grid-cols-3">
           {[
@@ -152,19 +121,17 @@ function Programs() {
           ))}
         </div>
         <h3 className="mt-8 text-sm font-black uppercase tracking-[0.18em] text-action">
-          Primary & JHS subjects
+          Character & faith
         </h3>
         <div className="mt-4 grid gap-4 md:grid-cols-2">
           {[
             [
-              "Literacy & languages",
-              "English Language and French — reading, writing and expression.",
+              "Values for life",
+              "Manners, kindness, sharing, and respect — caught as much as taught.",
             ],
-            ["Mathematics & science", "Number work, thinking skills and practical science."],
-            ["Digital & creative", "ICT, Creative Arts and Career Technology."],
             [
-              "Character & society",
-              "History, Religious & Moral Education, and Physical Education.",
+              "Fear of God",
+              "Simple Bible truths, prayer, and gratitude woven into every school day.",
             ],
           ].map(([name, text], i) => (
             <article key={name} className="rounded-lg border border-ink/10 bg-surface p-6">

@@ -7,15 +7,15 @@ import { seoPage } from "@/lib/seo";
 export const Route = createFileRoute("/tour")({
   head: () =>
     seoPage({
-      title: "School Tour — Buildings & Facilities | SIMS International School",
+      title: "School Tour — Buildings & Facilities | Shine and Glow Montessori Model School",
       description:
-        "Take a school tour of SIMS International School at Ablekuma New Town, Accra, Ghana — our gate and entrance, playground, outdoor play areas, and classrooms.",
+        "Take a school tour of Shine and Glow Montessori Model School at Community 25, Tema, Ghana — our gate and entrance, playground, outdoor play areas, and classrooms.",
       path: "/tour",
     }),
   component: Tour,
 });
 
-// TODO: add SIMS tour photos to public/tour/ then list them here:
+// TODO: add Shine and Glow tour photos to public/tour/ then list them here:
 //   const photos = [
 //     { src: "/tour/gate.jpg", name: "School Gate & Entrance" },
 //     ...
@@ -36,9 +36,9 @@ function Tour() {
       <PageHero
         eyebrow="School tour"
         title="Take a look around our school."
-        intro="Our gate and entrance, playground, outdoor play areas, and classrooms — SIMS International School, Ablekuma New Town, Accra."
+        intro="Our gate and entrance, playground, outdoor play areas, and classrooms — Shine and Glow Montessori Model School, Community 25, Tema."
       />
-      <Section eyebrow="Buildings & facilities" title="Views of SIMS.">
+      <Section eyebrow="Buildings & facilities" title="Views of Shine and Glow.">
         {photos.length === 0 ? (
           <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-3">
             {PLACEHOLDER_VIEWS.map((name) => (
@@ -76,8 +76,8 @@ function Tour() {
       <Section dark eyebrow="Like what you see?" title="Come and see it in person.">
         <div className="flex flex-col items-start gap-5">
           <p className="max-w-xl leading-relaxed text-paper/70">
-            Photos are a start — the real SIMS is even better. Book a visit and walk our buildings,
-            meet our teachers, and picture your child here.
+            Photos are a start — the real Shine and Glow is even better. Book a visit and walk our
+            buildings, meet our teachers, and picture your child here.
           </p>
           <Button
             asChild

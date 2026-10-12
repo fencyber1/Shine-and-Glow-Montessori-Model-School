@@ -1,16 +1,20 @@
 export const SITE_URL = "https://sims-international.vercel.app";
-export const SITE_NAME = "SIMS International School";
-export const OG_IMAGE = `${SITE_URL}/og-image.png`;
-export const OG_IMAGE_WIDTH = 1200;
-export const OG_IMAGE_HEIGHT = 630;
-export const PHONE_MAIN = "+233531799325";
-export const PHONE_DISPLAY = "053 179 9325";
-export const WHATSAPP_URL = "https://wa.me/233531799325";
-export const SITE_EMAIL = "info@simsinternational.edu.gh";
-export const MOTTO = "Empowering Our Generation with Knowledge & Skills";
-export const ADDRESS_SHORT = "Abase Road, Ablekuma New Town, Accra, Ghana (JMMM+GH)";
+export const SITE_NAME = "Shine and Glow Montessori Model School";
+export const OG_IMAGE = `${SITE_URL}/og-image.jpeg`;
+export const OG_IMAGE_WIDTH = 1280;
+export const OG_IMAGE_HEIGHT = 672;
+export const PHONE_MAIN = "+233246563922";
+export const PHONE_DISPLAY = "024 656 3922";
+export const PHONE_SECONDARY = "+233244109060";
+export const PHONE_SECONDARY_DISPLAY = "024 410 9060";
+export const WHATSAPP_URL = "https://wa.me/233246563922";
+export const SITE_EMAIL = "info@shineandglowmontessori.site";
+export const INSTAGRAM_URL = "https://www.instagram.com/shine_glow_montessori/";
+export const MOTTO = "Child care specialists that unleash your child's full potential";
+export const ADDRESS_SHORT =
+  "HFC Estate, Community 25 (INST/C25/H/2 Nana Otu Road), Tema, Greater Accra Region, Ghana";
 export const MAPS_URL =
-  "https://www.google.com/maps/search/?api=1&query=Abase+Road+Ablekuma+New+Town+Accra";
+  "https://www.google.com/maps/search/?api=1&query=Shine+and+Glow+Montessori+Model+School+Tema";
 export const HOURS_SHORT = "Mon–Fri · 6:00am–5:00pm · Sat–Sun Closed";
 
 export function pageUrl(path: string) {
@@ -29,8 +33,8 @@ export function seoPage(opts: { title: string; description: string; path: string
       { property: "og:image", content: OG_IMAGE },
       { property: "og:image:width", content: String(OG_IMAGE_WIDTH) },
       { property: "og:image:height", content: String(OG_IMAGE_HEIGHT) },
-      { property: "og:image:type", content: "image/png" },
-      { property: "og:image:alt", content: "SIMS International School" },
+      { property: "og:image:type", content: "image/jpeg" },
+      { property: "og:image:alt", content: "Shine and Glow Montessori Model School" },
       { property: "og:locale", content: "en_GH" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
@@ -58,32 +62,29 @@ export const schoolSchema = {
   image: OG_IMAGE,
   email: SITE_EMAIL,
   telephone: PHONE_MAIN,
-  foundingDate: "1960",
   address: {
     "@type": "PostalAddress",
-    streetAddress: "Abase Road, Ablekuma New Town",
-    addressLocality: "Accra",
+    streetAddress: "HFC Estate, Community 25 (INST/C25/H/2 Nana Otu Road)",
+    addressLocality: "Tema",
+    addressRegion: "Greater Accra Region",
     addressCountry: "GH",
   },
   location: [
     {
       "@type": "Place",
-      name: "SIMS International School — Ablekuma New Town",
+      name: "Shine and Glow Montessori Model School — Community 25, Tema",
       address: {
         "@type": "PostalAddress",
-        streetAddress: "Abase Road, Ablekuma New Town",
-        addressLocality: "Accra",
+        streetAddress: "HFC Estate, Community 25 (INST/C25/H/2 Nana Otu Road)",
+        addressLocality: "Tema",
+        addressRegion: "Greater Accra Region",
         addressCountry: "GH",
       },
       telephone: PHONE_MAIN,
     },
   ],
   openingHours: "Mo-Fr 06:00-17:00",
-  sameAs: [
-    "https://www.facebook.com/simsinternationalschool/",
-    "https://www.instagram.com/simsintlschool/",
-    "https://www.tiktok.com/@simsinternationalschool",
-  ],
+  sameAs: [INSTAGRAM_URL],
 };
 
 export const faqSchema = {
@@ -92,10 +93,10 @@ export const faqSchema = {
   mainEntity: [
     {
       "@type": "Question",
-      name: "What ages does SIMS International School accept?",
+      name: "What ages does Shine and Glow Montessori Model School accept?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "We welcome children from 18 months to 15 years — from Creche to JHS — call 053 179 9325 and we will help with class placement.",
+        text: "We welcome children from 6 months to 6 years — Infant, Nursery and Preschool — call 024 656 3922 and we will help with class placement.",
       },
     },
     {
@@ -111,7 +112,7 @@ export const faqSchema = {
       name: "Can I tour the campus before enrolling?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "Yes. Appointments may be booked by phone — call 053 179 9325 — and we will arrange a weekday visit.",
+        text: "Yes. Appointments may be booked by phone — call 024 656 3922 — and we will arrange a weekday visit.",
       },
     },
     {
@@ -132,10 +133,10 @@ export const faqSchema = {
     },
     {
       "@type": "Question",
-      name: "Where is SIMS International School located?",
+      name: "Where is Shine and Glow Montessori Model School located?",
       acceptedAnswer: {
         "@type": "Answer",
-        text: "We are at Abase Road, Ablekuma New Town, Accra, Ghana.",
+        text: "We are at HFC Estate, Community 25 (INST/C25/H/2 Nana Otu Road), Tema, Greater Accra Region, Ghana.",
       },
     },
   ],

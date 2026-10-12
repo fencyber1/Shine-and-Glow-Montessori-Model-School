@@ -1,9 +1,9 @@
 import { Link, useLocation } from "@tanstack/react-router";
-import { Facebook, Instagram, Mail, MapPin, Menu, MessageCircle, Phone } from "lucide-react";
+import { Instagram, Mail, MapPin, Menu, MessageCircle, Phone } from "lucide-react";
 import { useState, type ReactNode } from "react";
 
 import { Button } from "@/components/ui/button";
-import { JsonLd, breadcrumbSchema, schoolSchema } from "@/lib/seo";
+import { JsonLd, breadcrumbSchema, schoolSchema, INSTAGRAM_URL } from "@/lib/seo";
 import {
   Sheet,
   SheetClose,
@@ -43,7 +43,7 @@ function SchoolCrest({ className = "" }: { className?: string }) {
   return (
     <img
       src="/logo.png"
-      alt="SIMS International School crest"
+      alt="Shine and Glow Montessori Model School crest"
       width={96}
       height={96}
       onError={() => setMissing(true)}
@@ -64,13 +64,13 @@ export function SiteShell({ children }: { children: ReactNode }) {
           <Link
             to="/"
             className="flex items-center gap-3"
-            aria-label="SIMS International School home"
+            aria-label="Shine and Glow Montessori Model School home"
           >
             <SchoolCrest />
             <span className="leading-none">
-              <span className="block text-[15px] font-extrabold">SIMS INTERNATIONAL SCHOOL</span>
+              <span className="block text-[15px] font-extrabold">SHINE AND GLOW</span>
               <span className="mt-1 block text-[9px] font-semibold uppercase tracking-[0.22em] text-ink-soft">
-                Empowering Our Generation with Knowledge & Skills
+                Montessori Model School · Tema
               </span>
             </span>
           </Link>
@@ -91,7 +91,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
 
           <div className="hidden items-center gap-2 sm:flex">
             <Button asChild variant="ghost" size="icon" aria-label="Call admissions">
-              <a href="tel:+233531799325">
+              <a href="tel:+233246563922">
                 <Phone />
               </a>
             </Button>
@@ -119,7 +119,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
             <SheetContent className="w-[88%] bg-paper">
               <SheetHeader className="text-left">
                 <SheetTitle className="font-extrabold text-ink">
-                  SIMS International School
+                  Shine and Glow Montessori Model School
                 </SheetTitle>
                 <SheetDescription>Explore our school and speak with admissions.</SheetDescription>
               </SheetHeader>
@@ -155,10 +155,12 @@ export function SiteShell({ children }: { children: ReactNode }) {
           <div>
             <div className="flex items-center gap-3">
               <SchoolCrest />
-              <span className="font-extrabold text-paper">SIMS International School</span>
+              <span className="font-extrabold text-paper">
+                Shine and Glow Montessori Model School
+              </span>
             </div>
             <p className="mt-4 font-serif text-lg italic leading-snug text-paper">
-              “Empowering Our Generation with Knowledge & Skills.”
+              “Child care specialists that unleash your child&apos;s full potential.”
             </p>
             <p className="mt-1 text-[11px] font-bold uppercase tracking-[0.18em] text-paper/50">
               Our motto
@@ -169,51 +171,10 @@ export function SiteShell({ children }: { children: ReactNode }) {
                 variant="outline"
                 size="icon"
                 className="size-9 rounded-full border-paper/20 bg-transparent text-paper/70 hover:bg-paper/10 hover:text-paper"
-                aria-label="SIMS International School on Facebook"
+                aria-label="Shine and Glow Montessori Model School on Instagram"
               >
-                <a
-                  href="https://www.facebook.com/simsinternationalschool/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <Facebook className="size-4" />
-                </a>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="icon"
-                className="size-9 rounded-full border-paper/20 bg-transparent text-paper/70 hover:bg-paper/10 hover:text-paper"
-                aria-label="SIMS International School on Instagram"
-              >
-                <a
-                  href="https://www.instagram.com/simsintlschool/"
-                  target="_blank"
-                  rel="noreferrer"
-                >
+                <a href={INSTAGRAM_URL} target="_blank" rel="noreferrer">
                   <Instagram className="size-4" />
-                </a>
-              </Button>
-              <Button
-                asChild
-                variant="outline"
-                size="icon"
-                className="size-9 rounded-full border-paper/20 bg-transparent text-paper/70 hover:bg-paper/10 hover:text-paper"
-                aria-label="SIMS International School on TikTok"
-              >
-                <a
-                  href="https://www.tiktok.com/@simsinternationalschool"
-                  target="_blank"
-                  rel="noreferrer"
-                >
-                  <svg
-                    viewBox="0 0 24 24"
-                    fill="currentColor"
-                    className="size-4"
-                    aria-hidden="true"
-                  >
-                    <path d="M19.59 6.69a4.83 4.83 0 0 1-3.77-4.25V2h-3.45v13.67a2.89 2.89 0 0 1-5.2 1.74 2.89 2.89 0 0 1 2.31-4.64 2.93 2.93 0 0 1 .88.13V9.4a6.84 6.84 0 0 0-1-.05A6.33 6.33 0 0 0 5 20.1a6.34 6.34 0 0 0 10.86-4.43v-7a8.16 8.16 0 0 0 4.77 1.52v-3.4a4.85 4.85 0 0 1-1-.1z" />
-                  </svg>
                 </a>
               </Button>
             </div>
@@ -231,22 +192,25 @@ export function SiteShell({ children }: { children: ReactNode }) {
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.18em] text-action">Admissions</p>
             <div className="mt-4 space-y-3 text-sm">
-              <a href="tel:+233531799325" className="flex items-center gap-2 hover:text-paper">
-                <Phone className="size-4" /> 053 179 9325
+              <a href="tel:+233246563922" className="flex items-center gap-2 hover:text-paper">
+                <Phone className="size-4" /> 024 656 3922
+              </a>
+              <a href="tel:+233244109060" className="flex items-center gap-2 hover:text-paper">
+                <Phone className="size-4" /> 024 410 9060
               </a>
               <a
-                href="https://www.google.com/maps/search/?api=1&query=Abase+Road+Ablekuma+New+Town+Accra"
+                href="https://www.google.com/maps/search/?api=1&query=Shine+and+Glow+Montessori+Model+School+Tema"
                 target="_blank"
                 rel="noreferrer"
                 className="flex items-center gap-2 hover:text-paper"
               >
-                <MapPin className="size-4" /> Abase Road, Ablekuma New Town
+                <MapPin className="size-4" /> HFC Estate, Community 25, Tema
               </a>
               <a
-                href="mailto:info@simsinternational.edu.gh"
+                href="mailto:info@shineandglowmontessori.site"
                 className="flex items-center gap-2 hover:text-paper"
               >
-                <Mail className="size-4" /> info@simsinternational.edu.gh
+                <Mail className="size-4" /> info@shineandglowmontessori.site
               </a>
               <Link to="/contact" className="flex items-center gap-2 hover:text-paper">
                 <MessageCircle className="size-4" /> Ask a question
@@ -255,14 +219,14 @@ export function SiteShell({ children }: { children: ReactNode }) {
           </div>
         </div>
         <div className="border-t border-paper/10 px-5 py-5 text-center text-xs text-paper/50">
-          © 2026 SIMS International School · Abase Road, Ablekuma New Town, Accra, Ghana
+          © 2026 Shine and Glow Montessori Model School · HFC Estate, Community 25, Tema, Ghana
         </div>
       </footer>
 
       <div className="fixed inset-x-0 bottom-0 z-40 border-t border-ink/10 bg-paper/95 p-3 backdrop-blur-md lg:hidden">
         <div className="mx-auto flex max-w-md gap-2">
           <Button asChild variant="outline" size="icon" className="size-11 shrink-0 rounded-full">
-            <a href="tel:+233531799325" aria-label="Call admissions">
+            <a href="tel:+233246563922" aria-label="Call admissions">
               <Phone />
             </a>
           </Button>
@@ -279,7 +243,7 @@ export function SiteShell({ children }: { children: ReactNode }) {
             className="size-11 shrink-0 rounded-full border-growth/40 text-growth hover:border-growth hover:bg-growth/10"
           >
             <a
-              href="https://wa.me/233531799325?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20admissions."
+              href="https://wa.me/233246563922?text=Hello%2C%20I%27d%20like%20to%20ask%20about%20admissions."
               target="_blank"
               rel="noreferrer"
               aria-label="Chat with admissions on WhatsApp"

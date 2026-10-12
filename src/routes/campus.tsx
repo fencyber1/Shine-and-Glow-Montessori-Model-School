@@ -7,15 +7,15 @@ import { seoPage } from "@/lib/seo";
 export const Route = createFileRoute("/campus")({
   head: () =>
     seoPage({
-      title: "Campus & Facilities — SIMS International School, Accra",
+      title: "Campus & Facilities — Shine and Glow Montessori Model School, Tema",
       description:
-        "Tour SIMS International School's classrooms, laboratories, play areas and outdoor spaces — 24-hour CCTV, well-stocked library, and homely, well-ventilated rooms for Creche to JHS at Ablekuma New Town, Accra.",
+        "Tour Shine and Glow Montessori Model School's classrooms, play areas and outdoor spaces — 24-hour CCTV, well-stocked library, and homely, well-ventilated rooms for ages 6 months to 6 years at Community 25, Tema.",
       path: "/campus",
     }),
   component: Campus,
 });
 
-// TODO: add SIMS campus photos to public/ and reference them here.
+// TODO: add Shine and Glow campus photos to public/ and reference them here.
 const spaces = [
   [
     "Classroom learning",

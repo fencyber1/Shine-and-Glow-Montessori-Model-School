@@ -10,9 +10,9 @@ import { JsonLd, seoPage, schoolSchema } from "@/lib/seo";
 export const Route = createFileRoute("/")({
   head: () =>
     seoPage({
-      title: "SIMS International School, Accra | Creche to JHS",
+      title: "Shine and Glow Montessori Model School, Tema | Ages 6 Months to 6 Years",
       description:
-        "SIMS International School, Ablekuma New Town, Accra — Creche to JHS. Ghana curriculum with the international approach.",
+        "Shine and Glow Montessori Model School, Community 25, Tema — Infant, Nursery and Preschool. Montessori learning for children aged 6 months to 6 years.",
       path: "/",
     }),
   component: Index,
@@ -46,18 +46,12 @@ function Index() {
     <main>
       <JsonLd data={schoolSchema} />
       <section className="relative overflow-hidden bg-ink text-paper">
-        <img
-          src="/gallery/sims/sims-01.jpg"
-          alt="SIMS graduates throwing caps in the air at the graduation ceremony"
-          fetchPriority="high"
-          className="absolute inset-0 size-full object-cover"
-        />
-        <div className="absolute inset-0 bg-ink/55" />
-        <div className="absolute inset-0 bg-gradient-to-r from-ink/90 via-ink/40 to-ink/5" />
+        <div className="absolute -left-24 -top-24 size-96 rounded-full bg-trust/20 blur-3xl" />
+        <div className="absolute inset-0 bg-gradient-to-r from-ink via-ink/70 to-ink/30" />
         <div className="relative mx-auto max-w-7xl px-5 py-24 sm:py-32 lg:py-40">
           <p className="flex items-center gap-3 text-xs font-bold uppercase tracking-[0.22em] text-paper/90">
-            <span className="h-px w-10 bg-action" /> International School in Ghana · Ablekuma New
-            Town · Accra
+            <span className="h-px w-10 bg-action" /> Montessori Preschool in Ghana · Community 25 ·
+            Tema
           </p>
           <h1 className="mt-6 max-w-5xl text-5xl font-black leading-[0.95] sm:text-6xl lg:text-7xl">
             Learn. Grow.{" "}
@@ -66,9 +60,9 @@ function Index() {
             </span>
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-paper/75 sm:text-lg">
-            At SIMS, we believe every child's future begins with a strong foundation. From Creche to
-            JHS, we nurture each child's potential through hands-on, practical learning, strong
-            academics, and values that last a lifetime.
+            At Shine and Glow, we set your child&apos;s path bright. Our priority is to impact the
+            values of life and the fear of God into children as they grow — child care specialists
+            that unleash your child&apos;s full potential.
           </p>
           <div className="mt-8 flex flex-wrap gap-3">
             <Button
@@ -90,7 +84,7 @@ function Index() {
         </div>
       </section>
       <Section
-        eyebrow="Why SIMS"
+        eyebrow="Why Shine and Glow"
         title="The confidence parents look for. The opportunity children deserve."
       >
         <div className="grid gap-5 md:grid-cols-4">
@@ -131,34 +125,35 @@ function Index() {
         </div>
         <div className="mt-8 border-l-4 border-action bg-surface p-6 sm:p-8">
           <h3 className="text-xl font-black sm:text-2xl">
-            Empowering Our Generation with Knowledge & Skills
+            Child care specialists that unleash your child&apos;s full potential
           </h3>
           <p className="mt-3 max-w-3xl leading-relaxed text-ink-soft">
-            At SIMS International School, our motto shapes every school day — from a child's first
-            steps in Creche to graduation day in JHS.
+            At Shine and Glow Montessori Model School, our promise shapes every school day — from a
+            child&apos;s first steps as an infant to graduation day in Preschool.
           </p>
         </div>
       </Section>
       <Section
-        eyebrow="International education in Ghana"
-        title="What a great international school in Ghana looks like."
+        eyebrow="Montessori education in Ghana"
+        title="What a great preschool in Tema looks like."
       >
         <div className="grid gap-8 lg:grid-cols-2">
           <div className="space-y-4 leading-relaxed text-ink-soft">
             <p>
               Choosing a school in Ghana is one of the most important decisions a family makes. The
-              years from Creche to JHS shape how a child learns, relates to others, and sees
-              themselves. At SIMS International School, we walk that whole journey with your child.
+              years from 6 months to 6 years shape how a child learns, relates to others, and sees
+              themselves. At Shine and Glow Montessori Model School, we walk that whole journey with
+              your child.
             </p>
             <p>
-              Our school blends the Ghana curriculum with an international, hands-on approach —
-              practical life, sensorial learning, and self-directed discovery in the early years,
-              growing into strong academics, BECE preparation, and leadership in Primary and JHS.
+              Our school follows the Montessori approach — practical life, sensorial learning, and
+              self-directed discovery — building strong foundations in language and number, and
+              character rooted in the values of life and the fear of God.
             </p>
             <p>
-              With a warm and homely environment at Ablekuma New Town, and teachers who genuinely
-              care, SIMS gives your child the strongest possible start — and gives you complete
-              peace of mind.
+              With a warm and homely environment at Community 25, Tema, and teachers who genuinely
+              care, Shine and Glow gives your child the strongest possible start — and gives you
+              complete peace of mind.
             </p>
             <Button asChild variant="link" className="mt-2 px-0 text-trust">
               <Link to="/programs">
@@ -168,9 +163,9 @@ function Index() {
           </div>
           <div className="grid gap-3 sm:grid-cols-2">
             {[
-              "Ghana curriculum + international approach",
+              "Montessori learning through play",
               "Small, attentive classes",
-              "Ablekuma New Town, Accra",
+              "Community 25, Tema",
               "Safe & homely environment",
             ].map((x) => (
               <div key={x} className="border-l-4 border-action bg-surface p-5 font-bold">
@@ -180,28 +175,23 @@ function Index() {
           </div>
         </div>
       </Section>
-      <Section eyebrow="Academic programs" title="Four stages, one promise: children who thrive.">
-        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-4">
+      <Section eyebrow="Academic programs" title="Three stages, one promise: children who thrive.">
+        <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
           {[
             [
-              "Creche",
-              "Gentle first steps",
+              "Infant",
+              "Gentle beginnings",
               "Warm care, sensory play, music, and gentle routines for our youngest.",
             ],
             [
-              "Nursery & Kindergarten",
+              "Nursery",
               "Confident little explorers",
               "Phonics, numbers through play, art, and growing independence.",
             ],
             [
-              "Primary",
-              "Strong foundations",
-              "English, Mathematics, Science and ICT with sound moral training.",
-            ],
-            [
-              "JHS",
-              "Ready for secondary school",
-              "Full BECE preparation, guidance, and leadership.",
+              "Preschool",
+              "Ready for primary school",
+              "Reading and writing readiness, early mathematics, and sound moral training.",
             ],
           ].map(([name, ages, text]) => (
             <article
@@ -226,7 +216,7 @@ function Index() {
           <div className="skew-x-3 overflow-hidden rounded-xl border border-paper/20 bg-paper/10 p-2">
             <div className="grid aspect-[4/3] w-full place-items-center bg-paper/5 text-center">
               <p className="max-w-xs text-sm text-paper/60">
-                Campus photo coming soon — add your SIMS pictures to the gallery.
+                Campus photo coming soon — add your Shine and Glow pictures to the gallery.
               </p>
             </div>
           </div>
@@ -244,7 +234,7 @@ function Index() {
           <div>
             <p className="text-xs font-bold uppercase tracking-[0.2em] text-action">Admissions</p>
             <h2 className="mt-2 text-3xl font-black sm:text-4xl">
-              Ready to picture your child at SIMS?
+              Ready to picture your child at Shine and Glow?
             </h2>
             <p className="mt-4 max-w-lg leading-relaxed text-paper/70">
               Tell us what matters to your family. An admissions adviser will help you understand

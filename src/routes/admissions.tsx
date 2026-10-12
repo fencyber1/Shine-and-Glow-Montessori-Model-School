@@ -11,9 +11,9 @@ import { seoPage } from "@/lib/seo";
 export const Route = createFileRoute("/admissions")({
   head: () =>
     seoPage({
-      title: "Admissions & Fees — SIMS International School, Accra",
+      title: "Admissions & Fees — Shine and Glow Montessori Model School, Tema",
       description:
-        "Apply to SIMS International School, Accra — admission forms collected at the premises, requirements, fee structure (one-time registration + 3 termly payments), and enquiry options.",
+        "Apply to Shine and Glow Montessori Model School, Tema — admission forms collected at the premises, requirements, fee structure (one-time registration + 3 termly payments), and enquiry options.",
       path: "/admissions",
     }),
   component: Admissions,
@@ -26,8 +26,12 @@ function Admissions() {
       "Start a conversation",
       "Tell us what you are looking for and ask any first questions.",
     ],
-    [School, "Visit SIMS", "Meet teachers, see classes in action, and experience the campus."],
-    [FileText, "Apply", "Complete the application and provide recent school records."],
+    [
+      School,
+      "Visit Shine and Glow",
+      "Meet teachers, see classes in action, and experience the campus.",
+    ],
+    [FileText, "Apply", "Complete the application and provide your child's birth certificate."],
     [
       UserCheck,
       "Meet & decide",
@@ -101,13 +105,19 @@ function Admissions() {
                   <p className="leading-relaxed">{list as string}</p>
                   <div className="flex flex-col gap-2">
                     <a
-                      href="tel:+233531799325"
+                      href="tel:+233246563922"
                       className="rounded-md border border-paper/20 bg-paper/10 px-3 py-2.5 text-center font-bold text-paper hover:bg-paper/20"
                     >
-                      Call 053 179 9325
+                      Call 024 656 3922
                     </a>
                     <a
-                      href="https://wa.me/233531799325"
+                      href="tel:+233244109060"
+                      className="rounded-md border border-paper/20 bg-paper/10 px-3 py-2.5 text-center font-bold text-paper hover:bg-paper/20"
+                    >
+                      Call 024 410 9060
+                    </a>
+                    <a
+                      href="https://wa.me/233246563922"
                       target="_blank"
                       rel="noreferrer"
                       className="rounded-md border border-paper/20 bg-paper/10 px-3 py-2.5 text-center font-bold text-paper hover:bg-paper/20"
